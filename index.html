@@ -8,13 +8,15 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
-    body {
+    html, body {
       font-family: 'Orbitron', sans-serif;
       background: radial-gradient(circle at top, #0d0d0d 0%, #0a0a0a 100%);
       color: #d1d5db;
       margin: 0;
       padding: 0;
       min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
     h1, h2, h3 {
@@ -89,6 +91,8 @@
     footer {
       background: #0f172a;
       color: #94a3b8;
+      margin-top: auto;
+      padding: 1.5rem 0;
     }
 
     a {
@@ -102,35 +106,52 @@
     .underline-hover:hover {
       border-bottom: 2px solid #38bdf8;
     }
+
+    /* Header-specific styles */
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    @media (max-width: 500px) {
+      header .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      header .flex.items-center {
+        justify-content: center;
+      }
+      header .flex.space-x-4 {
+        justify-content: center;
+      }
+    }
   </style>
 </head>
 <body>
-<header class="header-bg py-4">
-  <div class="container mx-auto px-4 flex flex-col sm:flex-row items-center sm:justify-between gap-4">
-    
-    <!-- Logo & Title -->
-    <div class="flex items-center gap-3">
-      <img src="https://cdn.discordapp.com/attachments/1332171391687987203/1361644527760179200/3dgifmaker22633.gif?ex=684b5009&is=6849fe89&hm=48ea025f3a0799787ac30489331fd44a989cffbaca9c3f63aafc43ab694f6576&" alt="Logo" class="h-12 w-12 sm:h-16 sm:w-16 transition-transform duration-300 hover:scale-105" />
-      <div class="text-center sm:text-left">
-        <h1 class="text-lg sm:text-xl font-bold neon">Invicible Midnight Racer</h1>
-        <p class="text-xs sm:text-sm text-gray-400">Underground Society</p>
+  <header class="header-bg py-4">
+    <div class="container mx-auto px-4">
+      <!-- Logo & Title -->
+      <div class="flex items-center gap-3">
+        <img src="https://cdn.discordapp.com/attachments/1332171391687987203/1361644527760179200/3dgifmaker22633.gif?ex=684b5009&is=6849fe89&hm=48ea025f3a0799787ac30489331fd44a989cffbaca9c3f63aafc43ab694f6576&" alt="Logo" class="h-10 w-10 sm:h-12 sm:w-12 transition-transform duration-300 hover:scale-105" />
+        <div class="text-left">
+          <h1 class="text-base sm:text-lg font-bold neon">Invicible Midnight Racer</h1>
+          <p class="text-xs text-gray-400">Underground Society</p>
+        </div>
+      </div>
+
+      <!-- Social Links -->
+      <div class="flex space-x-4">
+        <a href="https://www.tiktok.com/@flxdrmaa" class="text-xs sm:text-sm text-blue-200 hover:underline">TikTok</a>
+        <a href="https://discord.gg/STx4HYU9PC" class="text-xs sm:text-sm text-blue-200 hover:underline">Discord</a>
       </div>
     </div>
-
-    <!-- Social Links -->
-    <div class="flex space-x-4">
-      <a href="https://www.tiktok.com/@flxdrmaa" class="text-sm text-blue-200 hover:underline">TikTok</a>
-      <a href="https://discord.gg/STx4HYU9PC" class="text-sm text-blue-200 hover:underline">Discord</a>
-    </div>
-
-  </div>
-</header>
-
-
-
+  </header>
 
   <!-- Main Content -->
-  <main class="container mx-auto px-4 py-8 space-y-8">
+  <main class="container mx-auto px-4 py-8 space-y-8 flex-grow">
     <!-- Prologue -->
     <section class="card text-center">
       <h2 class="text-lg neon mb-3">Prologue</h2>
@@ -161,6 +182,23 @@
       </div>
     </section>
 
+    <!-- Group -->
+    <section class="card text-center">
+      <h2 class="text-lg neon mb-3">Group</h2>
+      <div class="grid-layout">
+        <div class="grid-item">
+          <a href="nocturnrunner.html">
+            <img src="https://media.discordapp.net/attachments/1332171391687987203/1382650324065452082/nrunner.png?ex=684becf5&is=684a9b75&hm=cf2056249abc9e0c4fbe4443c9a7262c6460f468a66cd3c490f3b1c4670e60b4&=&format=webp&quality=lossless&width=545&height=94" alt="Nocturn Runner" class="img-responsive" />
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="nocturncrew.html">
+            <img src="https://media.discordapp.net/attachments/1332171391687987203/1382650323771981854/ncrew.png?ex=684becf5&is=684a9b75&hm=091cd75d13fa0599f691b50325dcf5ddbc5765d66cfc30850a15107685d4915c&=&format=webp&quality=lossless&width=455&height=94" alt="Nocturn Crew" class="img-responsive" />
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- Screens Roleplay -->
     <section class="card text-center">
       <h2 class="text-lg neon mb-3">Screens Roleplay</h2>
@@ -171,7 +209,7 @@
   </main>
 
   <footer class="text-center text-xs text-gray-500 py-6">
-    &copy; 2025 Invicible Midnight Racer
+    © 2025 Invicible Midnight Racer
   </footer>
 </body>
 </html>
