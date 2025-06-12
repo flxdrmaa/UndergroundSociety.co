@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chapter 3</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Orbitron:wght@500&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #0d0d0d 0%, #0a0a0a 100%);
+      color: #e5e7eb;
+    }
+    h1, h2 {
+      font-family: 'Orbitron', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .neon {
+      color: #38bdf8;
+      text-shadow: 0 0 4px #38bdf8, 0 0 8px #38bdf8;
+    }
+
+        .header-bg {
+      background: linear-gradient(90deg, #111827, #1e3a8a);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+    }
+
+    .card {
+      background: rgba(30, 41, 59, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 0.75rem;
+      padding: 2rem;
+    }
+    .img-full {
+      width: 100%;
+      max-width: 900px;
+      border-radius: 0.5rem;
+      margin: 2rem auto;
+      display: block;
+      box-shadow: 0 0 15px rgba(59, 130, 246, 0.2);
+    }
+    p {
+      line-height: 1.8;
+      font-size: 1rem;
+      text-align: justify;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header-bg py-4">
+    <div class="container mx-auto px-4 flex items-center justify-between flex-wrap">
+      <div class="flex items-center">
+        <img src="https://cdn.discordapp.com/attachments/1332171391687987203/1361644527760179200/3dgifmaker22633.gif?ex=684b5009&is=6849fe89&hm=48ea025f3a0799787ac30489331fd44a989cffbaca9c3f63aafc43ab694f6576&" alt="Logo" class="h-16 mr-4 hover:scale-110 transition-transform" />
+        <div>
+          <h1 class="text-xl font-bold neon">Invicible Midnight Racer</h1>
+          <p class="text-sm text-gray-400">Underground Society</p>
+        </div>
+      </div>
+      <a href="index.html" class="text-sm text-blue-200 underline-hover">Kembali</a>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-10">
+    <section class="card">
+      <h2 class="text-3xl neon font-bold text-center mb-8">Chapter 3: Coming Soon</h2>
+      <p></p>
+      <img src="https://fontmeme.com/temporary/07ff064dab060d0e36407c5bb2a8cf58.png" alt="Chapter 3 Image" class="img-full" />
+    </section>
+  </main>
+
+  <footer class="text-center text-xs text-gray-500 py-6">
+    &copy; 2025 Invicible Midnight Racer
+  </footer>
+</body>
+</html>
