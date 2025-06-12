@@ -49,7 +49,7 @@
             transform: scale(1.05); /* Slightly enlarge on hover */
         }
         .container {
-            max-width: 600px; /* Set a smaller max width for the container */
+            max-width: 100%; /* Set to 100% for better responsiveness */
             margin: 0 auto; /* Center the container */
             padding: 0 1rem; /* Add horizontal padding */
         }
@@ -62,28 +62,6 @@
         main {
             margin-top: 20px; /* Space between header and main content */
             margin-bottom: 20px; /* Space between main content and footer */
-        }
-        @media (max-width: 768px) {
-            .container {
-                padding: 0 0.5rem; /* Adjust padding for smaller screens */
-            }
-            .back-button {
-                font-size: 0.65rem; /* Smaller font size for buttons on smaller screens */
-            }
-        }
-        @media (max-width: 480px) {
-            .featured-box {
-                padding: 0.5em; /* Further reduce padding for smaller screens */
-            }
-            h1 {
-                font-size: 1.5rem; /* Smaller heading size */
-            }
-            h2 {
-                font-size: 1.25rem; /* Smaller subheading size */
-            }
-            h3 {
-                font-size: 0.875rem; /* Smaller text size for paragraphs */
-            }
         }
     </style>
 </head>
@@ -160,7 +138,7 @@
 
             <!-- Back to Index Button -->
             <div class="mt-6 text-center">
-                <a href="index.html" class="back-button">Kembali</a>
+                <a href="Index.html" class="back-button">Kembali</a>
             </div>
         </main>
     </div>
